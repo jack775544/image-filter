@@ -11,3 +11,4 @@ Steps
 <p><b>Note:</b> This will only work for images that have the file extenstion .JPG (case sensitive)</p>
 <h2>Software Requirments</h2>
 <p>To use this script Python is required to be installed with PIL (Python Imaging Library) which can be found <a href="http://www.pythonware.com/products/pil/">here</a></p>
+<p>This script was created and tested in Python 2.7 and has not been used on Python 3.x.</p>

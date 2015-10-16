@@ -67,6 +67,9 @@ def get_designated_folder(img, day=0):
     else:
         return os.path.join(get_higher_dir(get_higher_dir(root)), "sorted", "day", "images " + get_monday(time).strftime("%Y %m %d"))
 
+"""
+Main program logic
+"""
 def main():
     root = tk.Tk()
     root.withdraw()
