@@ -67,9 +67,6 @@ def get_designated_folder(img, day=0):
     else:
         return os.path.join(get_higher_dir(get_higher_dir(root)), "sorted", "day", "images " + get_monday(time).strftime("%Y %m %d"))
 
-"""
-Main program logic
-"""
 def main():
     root = tk.Tk()
     root.withdraw()
@@ -100,6 +97,7 @@ def main():
             img_name = pic[1].strftime("%Y.%m.%d %H.%M.%S ") + pic[0]
             formatted_name = os.path.join(new_folder, img_name)
             shutil.move(os.path.join(pic[2], pic[0]), formatted_name)
+            print "Moved Good Image: " + img_name
             y = y + 1
         else:
             # bad image options
@@ -111,6 +109,7 @@ def main():
             img_name = pic[1].strftime("%Y.%m.%d %H.%M.%S ") + pic[0]
             formatted_name = os.path.join(new_folder, img_name)
             shutil.move(os.path.join(pic[2], pic[0]), formatted_name)
+            print "Moved Bad Image: " + img_name
     print "\nTotal Images: " + str(x)
     print "Good Images: " + str(y)
     
